@@ -1,4 +1,5 @@
-#set text(font: ("New Computer Modern", "Songti SC"), size: 10pt)
+#set text(font: ("New Computer Modern", "Songti SC"), size: 12pt)
+#set par(justify: true, leading: 10pt)
 #set page(numbering: "— 1 —")
 
 同伦论简史
