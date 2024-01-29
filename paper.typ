@@ -1,28 +1,55 @@
+#set page(margin: 1.5in)
 #set text(font: ("New Computer Modern", "Songti SC"), size: 12pt)
-#set par(justify: true, leading: 10pt)
-#set page(numbering: "— 1 —")
+#set par(justify: true, leading: 0.8em, first-line-indent: 1.8em)
+#show heading: it => (
+  v(10pt) +
+  block(width: 100%, above: 1.4em, below: 1em)[
+    #set align(center)
+    #set text(15pt)
+    #it.body
+  ]
+)
+#show heading.where(
+  level: 1
+): it => (
+  pagebreak(to: "odd") +
+  block(width: 100%, below: 1em)[
+    #set align(center)
+    #set text(24pt)
+    #it.body
+  ]
+)
 
-同伦论简史
+// Title page
 
-#pagebreak()
+#block(width: 100%)[
+#set align(center)
+#set text(36pt)
+*同伦论简史*
+
+(封面页)
+]
+
+
+// Contents
+
+#outline(title: "目录", fill: none, depth: 2, indent: 1em)
+
+// Main matter
+#set page(numbering: "1")
+#counter(page).update(1)
 #include("intro.typ")
 
-#pagebreak()
 #include("beginnings.typ")
 
-#pagebreak()
 #include("algtop.typ")
 
-#pagebreak()
 // #include("homology.typ")
 
-#pagebreak()
 // #include("category.typ")
 
-#pagebreak()
 // #include("infcat.typ")
 
-#pagebreak()
 // #include("prospect.typ")
 
 #bibliography(title: "参考文献", "references.bib")
