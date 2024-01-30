@@ -3,7 +3,7 @@
 #set par(justify: true, leading: 0.8em, first-line-indent: 1.8em)
 #show heading: it => (
   v(10pt) +
-  block(width: 100%, above: 1.4em, below: 1em)[
+  block(width: 100%, above: 1.3em, below: 1em)[
     #set align(center)
     #set text(15pt)
     #it.body
@@ -13,7 +13,7 @@
   level: 1
 ): it => (
   pagebreak(to: "odd") +
-  block(width: 100%, below: 1em)[
+  block(width: 100%, below: 1.5em)[
     #set align(center)
     #set text(24pt)
     #it.body
@@ -29,6 +29,8 @@
 
 (封面页)
 ]
+
+给 Typst 打广告
 
 
 // Contents
