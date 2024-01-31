@@ -49,6 +49,7 @@ Lyndon 在对群上同调的研究中已经注意到了谱序列的雏形. 1947 
 
 Cartan 与 Eilenberg 在 1950 年代著书 《同调代数》, 为这个领域带来了一场革命. 他们定义了投射模的概念, 与内射模对举. 这使得 $"Ext"$ 和 $"Tor"$ 能统一地作为导出函子处理. 如 Hochschild 所言, 这本书的出现标志着同调代数的摸索时代正式结束.
 
+// https://www.math.uchicago.edu/~may/PAPERS/118.pdf
 
 = 范畴论
 

@@ -48,7 +48,7 @@
 
 // #include("homology.typ")
 
-// #include("category.typ")
+#include("category.typ")
 
 // #include("infcat.typ")
 
