@@ -1,8 +1,8 @@
 #[
 #set text(36pt)
 *同伦论简史*\
-#set text(15pt, font: "CMU Sans Serif")
-History of Homotopy Theory
+#set text(18pt, font: "CMU Sans Serif")
+A Brief History of Homotopy Theory
 ]
 #place(bottom + center, dy: 2cm)[
 #import "@preview/cetz:0.2.0"
