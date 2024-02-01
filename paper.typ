@@ -41,11 +41,11 @@ _由_ Typst _排版_.
 
 #include("algtop.typ")
 
-// #include("homology.typ")
+#include("homology.typ")
 
 #include("category.typ")
 
-// #include("infcat.typ")
+#include("infcat.typ")
 
 // #include("prospect.typ")
 
