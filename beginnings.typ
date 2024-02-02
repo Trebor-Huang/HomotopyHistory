@@ -1,3 +1,4 @@
+#import "common.typ": *
 = 开端
 
 本章主要参考 Poincaré 的 _Analysis Situs_ 英译 @AnalysisSitusTranslation.
