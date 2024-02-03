@@ -1,6 +1,10 @@
 = 同调代数
 
-(Cech 逆向极限)
+Exact sequences, 1941:
+- Hurewicz: cohomology $B --> A --> A \\ B$
+- Eckmann: homotopy exact sequence
+- Eilenberg–Steenrod axioms, 1945 (relative homology)
+- 1947, Kelley and Pitcher: name of "exact sequence", algebraic investigations
 
 不同系数的同调之间有相互关联. 1935 年, Čech 发现整数系数的同调可以确定任何其他交换群系数的同调. 在 Čech 的文章中可以看到交换群的张量积与 $"Tor"_1$ 积的表现. 上同调的万有系数定理也随着 $"Hom"$ 与 $"Ext"$ 这两个代数概念一起提出.
 
