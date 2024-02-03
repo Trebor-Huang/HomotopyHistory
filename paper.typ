@@ -1,6 +1,6 @@
 #set page(margin: 1.5in)
 #set text(font: ("New Computer Modern", "Songti SC"), size: 12pt)
-#set par(justify: true, leading: 0.8em, first-line-indent: 1.8em)
+#set par(justify: true, leading: 0.8em)
 #show emph: it => [
   #set text(font: ("New Computer Modern", "Kaiti SC"), style: "italic")
   #it.body]
@@ -25,6 +25,17 @@
 
 // Contents
 
+#show outline.entry.where(
+  level: 1
+): it => {
+  v(1.5em, weak: true)
+  strong(it, delta: 400)
+}
+#show outline.entry.where(
+  level: 2
+): it => {
+  text(fill: color.lighten(black, 40%), it)
+}
 #outline(title: "目录", fill: none, depth: 2, indent: 1em)
 
 #[
@@ -33,6 +44,7 @@ _由_ Typst _排版_.
 ]
 
 // Main matter
+#set par(first-line-indent: 1.8em)
 #set page(numbering: "1")
 #counter(page).update(1)
 #include("intro.typ")
