@@ -1,0 +1,26 @@
+name: Render paper.pdf
+on: push
+jobs:
+  render-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v3
+
+      - run: typst compile paper.typ paper.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paper
+          path: paper.pdf
+
+      - name: Get current date
+        id: date
+        run: echo "DATE=$(date +%Y-%m-%d-%H:%M)" >> $GITHUB_ENV
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: github.ref_type == 'tag'
+        with:
+          prerelease: true
+          name: "Build ${{ github.ref_name }} — ${{ env.DATE }}"
+          files: paper.pdf
