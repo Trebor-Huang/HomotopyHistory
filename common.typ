@@ -1,3 +1,4 @@
+#import "@preview/cetz:0.2.0"
 #import "@preview/ctheorems:1.1.0": *
 #show: thmrules
 #let proof = thmplain(

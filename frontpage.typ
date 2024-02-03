@@ -1,3 +1,4 @@
+#import "common.typ": *
 #[
 #set text(36pt)
 *同伦论简史*\
@@ -5,7 +6,6 @@
 A Brief History of Homotopy Theory
 ]
 #place(bottom + center, dy: 2cm)[
-#import "@preview/cetz:0.2.0"
 #import cetz.draw: *
 #set text(20pt)
 #let ang(i) = 10deg - calc.cos(i*90deg) * 3deg
