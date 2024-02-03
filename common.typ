@@ -9,3 +9,5 @@
 ).with(numbering: none)
 
 #let slash = math.class("fence", sym.slash)
+#let cap = math.class("binary", "⌢")
+#let cup = math.class("binary", "⌣")
