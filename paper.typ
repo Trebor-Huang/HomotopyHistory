@@ -29,7 +29,7 @@
   level: 1
 ): it => {
   v(1.5em, weak: true)
-  strong(it, delta: 400)
+  strong(it, delta: 200)
 }
 #show outline.entry.where(
   level: 2

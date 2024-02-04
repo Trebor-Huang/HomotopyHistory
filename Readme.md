@@ -1,7 +1,7 @@
 # History of Homotopy Theory
 
-Coursework.
+Coursework. Download [here](https://github.com/Trebor-Huang/HomotopyHistory/actions) (requires login).
 
 TODO:
-- [ ] CI building.
+- [X] CI building.
 - [ ] Proper formatting.
