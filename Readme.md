@@ -5,3 +5,4 @@ Coursework. Download [here](https://github.com/Trebor-Huang/HomotopyHistory/acti
 TODO:
 - [X] CI building.
 - [ ] Proper formatting.
+- [ ] Cite original texts.
