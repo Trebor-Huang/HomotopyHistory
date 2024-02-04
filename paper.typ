@@ -1,5 +1,5 @@
 #set page(margin: 1.5in)
-#set text(font: ("New Computer Modern", "Songti SC"), size: 12pt)
+#set text(font: ("New Computer Modern", "Source Han Serif SC"), size: 12pt, weight: 400)
 #set par(justify: true, leading: 0.8em)
 #show emph: it => [
   #set text(font: ("New Computer Modern", "Kaiti SC"), style: "italic")
