@@ -59,6 +59,6 @@ _由_ Typst _排版_.
 
 #include("infcat.typ")
 
-// #include("prospect.typ")
+#include("prospect.typ")
 
 #bibliography(title: "参考文献", "references.bib")
