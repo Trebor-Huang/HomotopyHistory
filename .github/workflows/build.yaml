@@ -7,9 +7,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v3
 
-      - run: |
-        wget https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
-        unzip 09_SourceHanSerifSC.zip
+      - name: Get Source Han Serif font
+        run: |
+          wget https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
+          unzip 09_SourceHanSerifSC.zip
       - run: typst compile paper.typ paper.pdf --font-path ./OTF/SimplifiedChinese/
       - uses: actions/upload-artifact@v4
         with:
