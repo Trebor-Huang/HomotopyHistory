@@ -5,13 +5,13 @@
 #set text(18pt, font: "CMU Sans Serif")
 A Brief History of Homotopy Theory
 ]
-#place(bottom + center, dy: 2cm)[
+#place(bottom + center, dy: 1cm)[
 #import cetz.draw: *
-#set text(20pt)
+#set text(18pt)
 #let ang(i) = 10deg - calc.cos(i*90deg) * 3deg
-#cetz.canvas({
+#cetz.canvas(length: 0.9cm,{
   circle((0,0), radius: 1.5, fill: black)
-  content((0,0), text(35pt, fill: white, $K upright(O)$))
+  content((0,0), text(32pt, fill: white, $K upright(O)$))
 
   content((0deg,5), $upright(O)$)
   content((45deg,5), $upright(O)\/upright(U)$)
@@ -25,20 +25,19 @@ A Brief History of Homotopy Theory
   set-style(mark: (end: ">", fill: black))
   for i in range(8) {
     arc((0,0), start:ang(i) + 45deg * i, stop: 45deg - ang(i+1) + 45deg * i, radius: 5, anchor: "origin")
-    content((22.5deg + 45deg * i, 5.5), text(16pt, $Omega$))
+    content(((ang(i) - ang(i+1))/2 + 45deg * i + 22.5deg, 5.6), text(16pt, $Omega$))
   }
 
-  circle((9,-5.5), radius: 1, fill: black)
-  content((9,-5.5), text(35pt, fill: white, $SS$))
+  circle((8.5,-5.5), radius: 1, fill: black)
+  content((8.5,-5.5), text(32pt, fill: white, $SS$))
 
-  content((9, -3.5), $0$)
-  content((9, 0), $ZZ$)
-  content((9, 3.5), $ZZ \/ 2 ZZ$)
-  content((9, 7), $ZZ \/ 2 ZZ$)
-  content((9, 10.5), $ZZ \/ 24 ZZ$)
-  content((9, 14), $0$)
-  content((9, 17.5), $0$)
-  content((9, 19), $dots.v$)
+  content((8.5, -3.5), $0$)
+  content((8.5, 0), $ZZ$)
+  content((8.5, 3.5), $ZZ \/ 2 ZZ$)
+  content((8.5, 7), $ZZ \/ 2 ZZ$)
+  content((8.5, 10.5), $ZZ \/ 24 ZZ$)
+  content((8.5, 14), $0$)
+  content((8.5, 16.5), $dots.v$)
 })
 ]
 
