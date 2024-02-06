@@ -11,6 +11,11 @@ jobs:
         run: |
           wget https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
           unzip 09_SourceHanSerifSC.zip
+
+          wget https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Caligraphic-Regular.ttf
+          mv KaTeX_Caligraphic-Regular.ttf OTF/SimplifiedChinese
+          wget https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/fonts/KaTeX_Caligraphic-Bold.ttf
+          mv KaTeX_Caligraphic-Bold.ttf OTF/SimplifiedChinese
       - run: typst compile paper.typ paper.pdf --font-path ./OTF/SimplifiedChinese/
       - uses: actions/upload-artifact@v4
         with:

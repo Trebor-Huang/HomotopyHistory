@@ -11,3 +11,6 @@
 #let slash = math.class("fence", sym.slash)
 #let cap = math.class("binary", "⌢")
 #let cup = math.class("binary", "⌣")
+
+// Override calligraphic font
+#let cal(t) = text(t, font: "KaTeX_Caligraphic")
