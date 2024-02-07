@@ -48,7 +48,7 @@ _由_ Typst _排版_.
 
 // Main matter
 #set par(first-line-indent: 2em)
-#show par: set block(spacing: 1.5em)
+#show par: set block(spacing: 1.6em)
 #set page(numbering: "1")
 #counter(page).update(1)
 
