@@ -2,8 +2,8 @@
 #[
 #set text(36pt)
 *同伦论简史*\
-#set text(18pt, font: "CMU Sans Serif")
-A Brief History of Homotopy Theory
+#set text(18pt)  // Avoid using more fonts
+$sans("A Brief History of Homotopy Theory")$
 ]
 #place(bottom + center, dy: 1cm)[
 #import cetz.draw: *

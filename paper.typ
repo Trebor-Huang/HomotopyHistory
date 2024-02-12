@@ -1,9 +1,6 @@
 #set page(paper: "iso-b5", margin: 1in)
 #set text(font: ("New Computer Modern", "Source Han Serif SC"), size: 12pt, weight: 400)
 #set par(justify: true, leading: 0.9em)
-#show emph: it => [
-  #set text(font: ("New Computer Modern", "Kaiti SC"), style: "italic")
-  #it.body]
 #show heading.where(level: 2): it => (
   v(10pt) +
   block(width: 100%, above: 1.3em, below: 1.5em)[
@@ -43,7 +40,7 @@
 
 #[
 #v(1fr)#h(1fr)
-_由_ Typst _排版_.
+由 #link("https://typst.app/")[#underline[Typst]] 排版.
 ]
 
 // Main matter
