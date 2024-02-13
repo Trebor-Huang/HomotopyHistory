@@ -11,11 +11,7 @@
 
 然而, 这种定义有诸多问题. 例如其中的极限与余极限并不对应同伦极限与余极限, 甚至在很多情况下都根本不存在. 这是因为商去同伦关系抛弃了更高阶的信息, 因此各种同伦操作都难以正确进行. 模型范畴是一种避免商去同伦, 利用额外添加的结构在 $sans("Top")$ 中进行同伦操作的办法.
 
-同样的现象在代数中也有出现.
-
-homotopy category, triangulated category, derived category
-
-tor and ext appearing everywhere
+同样的现象在代数中也有出现. 在链复形的研究中, 各种函子对同调群的影响可以由其导出函子描述. 但是这种描述非常复杂, 例如多个函子复合对链复形的影响需要繁杂的谱序列表述. 究其根本, 是导出函子取同调操作导致信息的丢失. 然而, 导出函子的构造中, 投射预解是不唯一的, 仅仅在链同伦意义下唯一, 因此才需要取同调确保良定义. 因此, 由 Grothendieck 与其学生 Jean-Louis Verdier 在 1960 年代考虑了链复形范畴 $"Ch"(A)$ 商去链同伦得到范畴 $cal(K)(A)$, 与局部化拟同构 (即保持所有同调群的映射, 类比弱同伦等价) 得到的范畴 $cal(D)(A)$. 这些范畴可以类似于模型范畴一样赋予额外的结构, 称作*三角范畴*.
 
 事实上, 代数拓扑中也出现了一个非常重要的三角范畴, 也就是谱的同伦范畴.
 
@@ -136,6 +132,8 @@ Grothendieck 在著名的手稿《追寻叠》@PursuingStacks 中提出用无穷
 
 这三条线的发展, 最终聚合催生了无穷范畴的研究.
 
-1973 年, Boardman 与 Vogt 引入了*拟范畴* (quasicategory), 标志着无穷范畴论的开端.
+1973 年, Boardman 与 Vogt @quasicategory 引入了*拟范畴* (quasicategory), 标志着无穷范畴论的开端. 这是基于单纯集的定义. 单纯集中的顶点代表对象, 边代表态射. 三角形表示两个态射的复合是第三个态射. 注意这意味着两个态射复合可以不唯一, 它们只需要在更高维的同伦意义下唯一即可. 同时, 三条边之间可以有多于一个三角形, 表示它们之间的同伦可以非平凡. 这种改动使得无穷维的融贯律可以统一地描述. 无穷范畴的操作就变成了有限集的一些组合问题.
 
-// The development of the derived category, by Alexander Grothendieck and his student Jean-Louis Verdier shortly after 1960, now appears as one terminal point in the explosive development of homological algebra in the 1950s, a decade in which it had made remarkable strides. The basic theory of Verdier was written down in his dissertation, published finally in 1996 in Astérisque (a summary had earlier appeared in SGA 4½). The axiomatics required an innovation, the concept of triangulated category, and the construction is based on localization of a category, a generalization of localization of a ring.
+随后, 操作无穷范畴所需的工具稳步发展. 无穷范畴的其他定义也逐渐出现. 例如 $sans("sSet")$-充实范畴, $sans("Top")$-充实范畴等等. 这些定义都是互相等价的.
+
+进入 21 世纪, Jacob Lurie 写出了《高维意象论》@HTT, 系统地描述了无穷范畴与无穷意象的理论. 同时, 《高维代数》@HA 将三角范畴的理论拓展为稳定无穷范畴. 在这个框架下, 同伦范畴可以看作是无穷范畴包含信息的截断, 正如基本群是拓扑空间所包含信息的截断. 这样, 之前提到的同伦困难就迎刃而解.
