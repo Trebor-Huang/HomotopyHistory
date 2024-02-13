@@ -1,17 +1,22 @@
 #set page(paper: "iso-b5", margin: 1in)
 #set text(font: ("New Computer Modern", "Source Han Serif SC"), size: 12pt, weight: 400)
 #set par(justify: true, leading: 0.9em)
+#show heading.where(level: 1): it => (
+  pagebreak(to: "odd") +
+  block(width: 100%, below: 1.8em)[
+    #set align(center)
+    #set text(24pt)
+    #it.body])
 #show heading.where(level: 2): it => (
   v(10pt) +
   block(width: 100%, above: 1.3em, below: 1.5em)[
     #set align(center)
     #set text(15pt)
     #it.body])
-#show heading.where(level: 1): it => (
-  pagebreak(to: "odd") +
-  block(width: 100%, below: 1.8em)[
-    #set align(center)
-    #set text(24pt)
+#show heading.where(level: 3): it => (
+  v(8pt) +
+  block(width: 100%, above: 1em, below: 1em)[
+    #set text(13pt)
     #it.body])
 
 // Title page
