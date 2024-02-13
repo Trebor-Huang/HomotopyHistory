@@ -15,6 +15,8 @@
 
 homotopy category, triangulated category, derived category
 
+tor and ext appearing everywhere
+
 事实上, 代数拓扑中也出现了一个非常重要的三角范畴, 也就是谱的同伦范畴.
 
 很早就发现了上同调与同伦之间的关系
@@ -30,7 +32,21 @@ $sans("Ho")(sans("Spec"))$ 也构成三角范畴, 这说明这些领域出现的
 
 === 高维代数
 
-also higher algebra
+上同调最重要的结构就是杯积 $H^n (X) times.circle H^m (X) -> H^(n+m) (X)$. 这翻译到谱上, 对应的是*环谱* (ring spectrum). 谱上可以定义缩积 $X and Y$, 类比交换群的张量积. 缩积的单位元是球谱 $SS$, 类比交换群 $ZZ$. 环谱就是携带了乘法 $mu : X and X -> X$ 与单位元 $eta : SS -> X$ 的谱, 使得乘法单位律与结合律在同伦意义下成立.
+
+类似的对象还有 H 空间, 就是带点拓扑空间 $X$ 上给定连续映射 $m : X times X -> X$, 满足 $m(*, -)$ 与 $m(-, *)$ 都同伦于恒同映射. 这可以看作同伦意义下的群公理弱化版.
+
+尽管在很多情况下只需要弱化的公理即可, 但是一些构造中需要更完整的公理才能体现较好的性质. 例如, 环谱中四个元素的乘法会有五种结合方式, 结合律给出同伦五边形
+
+#box(width: 100%)[
+#set align(center)
+#fletcher.diagram(spacing: (0cm, 1.5cm), node-defocus: 0, $
+  & (x dot y) dot (z dot w) edge("dr", bend: #20deg) & \
+  x dot (y dot (z dot w)) edge("ur", bend: #20deg) edge("d") && ((x dot y) dot z) dot w \
+  x dot ((y dot z) dot w) edge("rr") && (x dot (y dot z)) dot w edge("u")
+$)]
+
+此五边形不一定可缩, 即它们尽管结合, 但是结合的“方式不唯一”. 要求了此五边形可缩后, 五个元素的乘法又会构成一个九面体, 以此类推. 这一系列几何体称作 *Stasheff 多胞形*. 1963 年, Stasheff 利用它提出了有无穷高维的结合律的运算, 称作 $A_oo$ 代数. 而若再加上交换律, 就得到 $E_oo$ 代数. 这些代数的研究称作 “美丽新代数”. #footnote[《美丽新世界》是一本反乌托邦小说.]
 
 == 高维范畴
 
